@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
 
     spec.platform     = :ios, "10.0"
     spec.platform     = :tvos, "10.0"
-  
+
     spec.ios.deployment_target = "10.0"
     spec.tvos.deployment_target = "10.0"
 
@@ -36,4 +36,3 @@ Pod::Spec.new do |spec|
     spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=*simulator*]' => 'arm64' }
 
 end
-
