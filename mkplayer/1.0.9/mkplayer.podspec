@@ -23,9 +23,10 @@ Pod::Spec.new do |spec|
     spec.ios.framework  = 'AVKit'
     spec.ios.framework  = 'WebKit'
     spec.ios.dependency 'Alamofire', '~> 5.2'
-    spec.ios.dependency 'BitmovinPlayer', '3.0.0'
+    spec.ios.dependency 'BitmovinPlayer', '3.9.0'
     spec.ios.dependency 'BitmovinAnalyticsCollector/Core'
     spec.ios.dependency 'BitmovinAnalyticsCollector/BitmovinPlayer'
+    spec.ios.dependency 'google-cast-sdk', '~> 4.5.0'
 
     spec.tvos.vendored_frameworks = 'MKPlayer/tvOS/MKPlayer.framework'
     spec.tvos.framework  = 'Foundation'
@@ -33,7 +34,7 @@ Pod::Spec.new do |spec|
     spec.tvos.framework  = 'AVFoundation'
     spec.tvos.framework  = 'AVKit'
     spec.tvos.dependency 'Alamofire', '~> 5.2'
-    spec.tvos.dependency 'BitmovinPlayer', '3.0.0'
+    spec.tvos.dependency 'BitmovinPlayer', '3.9.0'
     spec.tvos.dependency 'BitmovinAnalyticsCollector/Core'
     spec.tvos.dependency 'BitmovinAnalyticsCollector/BitmovinPlayer'
 
