@@ -24,8 +24,8 @@ Pod::Spec.new do |spec|
     spec.ios.framework  = 'WebKit'
     spec.ios.dependency 'Alamofire', '~> 5.2'
     spec.ios.dependency 'BitmovinPlayer', '3.11.0'
-    spec.ios.dependency 'BitmovinAnalyticsCollector/Core'
-    spec.ios.dependency 'BitmovinAnalyticsCollector/BitmovinPlayer'
+    spec.ios.dependency 'BitmovinAnalyticsCollector/Core', '2.4.0'
+    spec.ios.dependency 'BitmovinAnalyticsCollector/BitmovinPlayer', '2.4.0'
     spec.ios.dependency 'google-cast-sdk', '~> 4.5.0'
 
     spec.tvos.vendored_frameworks = 'MKPlayer/tvOS/MKPlayer.framework'
@@ -35,8 +35,8 @@ Pod::Spec.new do |spec|
     spec.tvos.framework  = 'AVKit'
     spec.tvos.dependency 'Alamofire', '~> 5.2'
     spec.tvos.dependency 'BitmovinPlayer', '3.11.0'
-    spec.tvos.dependency 'BitmovinAnalyticsCollector/Core'
-    spec.tvos.dependency 'BitmovinAnalyticsCollector/BitmovinPlayer'
+    spec.tvos.dependency 'BitmovinAnalyticsCollector/Core', '2.4.0'
+    spec.tvos.dependency 'BitmovinAnalyticsCollector/BitmovinPlayer', '2.4.0'
 
     spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=*simulator*]' => 'arm64' }
     spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=*simulator*]' => 'arm64' }
