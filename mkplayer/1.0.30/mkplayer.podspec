@@ -27,6 +27,7 @@ Pod::Spec.new do |spec|
     spec.ios.dependency 'BitmovinAnalyticsCollector/Core', '2.9.2'
     spec.ios.dependency 'BitmovinAnalyticsCollector/BitmovinPlayer', '2.9.2'
     spec.ios.dependency 'google-cast-sdk', '~> 4.5.0'
+    spec.ios.dependency 'OMSDK_Turner', '0.0.1'
 
     spec.tvos.vendored_frameworks = 'MKPlayer/tvOS/MKPlayer.framework'
     spec.tvos.framework  = 'Foundation'
