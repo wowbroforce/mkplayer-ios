@@ -23,7 +23,6 @@ Pod::Spec.new do |spec|
     spec.ios.framework  = 'AVKit'
     spec.ios.framework  = 'WebKit'
     spec.ios.dependency 'Alamofire', '~> 5.2'
-    spec.ios.dependency 'google-cast-sdk', '~> 4.7.0'
     spec.ios.dependency 'OMSDK_Turner', '0.0.1'
     spec.ios.dependency 'FMTSSDK_Mediakind', '1.0.5'
 
