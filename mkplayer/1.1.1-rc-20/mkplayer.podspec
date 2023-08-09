@@ -16,6 +16,8 @@ Pod::Spec.new do |spec|
     spec.source       = { :http => "https://mkplayer.z13.web.core.windows.net/ios_tvos/MKPlayer-1.1.1-rc-20.zip" }
     spec.swift_version = "5"
 
+    spec.source_files = 'MKPlayer/**/*.{swift,h,m}'
+    spec.public_header_files = 'MKPlayer/**/*.{h}'
     spec.ios.vendored_frameworks = 'MKPlayer/iOS/MKPlayer.framework'
     spec.ios.framework  = 'Foundation'
     spec.ios.framework  = 'UIKit'
@@ -26,7 +28,6 @@ Pod::Spec.new do |spec|
     spec.ios.dependency 'BitmovinPlayer', '3.34.1'
     spec.ios.dependency 'BitmovinAnalyticsCollector/Core', '2.9.2'
     spec.ios.dependency 'BitmovinAnalyticsCollector/BitmovinPlayer', '2.9.2'
-    spec.ios.dependency 'google-cast-sdk', '~> 4.7.0'
     spec.ios.dependency 'OMSDK_Turner', '0.0.1'
 
     spec.tvos.vendored_frameworks = 'MKPlayer/tvOS/MKPlayer.framework'
@@ -38,6 +39,7 @@ Pod::Spec.new do |spec|
     spec.tvos.dependency 'BitmovinPlayer', '3.34.1'
     spec.tvos.dependency 'BitmovinAnalyticsCollector/Core', '2.9.2'
     spec.tvos.dependency 'BitmovinAnalyticsCollector/BitmovinPlayer', '2.9.2'
+    spec.tvos.exclude_files = ['MKPlayer/**/MKPCastManager.swift','MKPlayer/**/MKPBitmovinCastManager.swift','MKPlayer/**/MKPCastAPI.swift', 'MKPlayer/**/DownloadManager/**', "MKPlayer/**/MKPOMManager.swift", 'MKPlayer/**/Event/Data/Download/**","MKPlayer/**/Event/*Download*','MKPlayer/**/Config/MKPRemoteControlConfiguration.swift', 'MKPlayer/**/Players/**/MKPBitmovinCastManager1.h', 'MKPlayer/**/MKPCastManager1.h','MKPlayer/**/MKPCastAPI1.h','MKPlayer/**/MKPCastManagerListner1.h', 'MKPlayer/**/MKPCastManager1.m','MKPlayer/**/Players/**/MKPBitmovinCastManager1.m']
 
     spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=*simulator*]' => 'arm64' }
     spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=*simulator*]' => 'arm64' }
