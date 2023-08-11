@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
     spec.source       = { :http => "https://mkplayer.z13.web.core.windows.net/ios_tvos/MKPlayer-1.6.1-rc.zip" }
     spec.swift_version = "5"
 
-    spec.ios.vendored_frameworks = 'MKPlayer/iOS/MKPlayer.framework'
+    spec.ios.vendored_frameworks = 'MKPlayer/MKPlayer.xcframework'
     spec.ios.framework  = 'Foundation'
     spec.ios.framework  = 'UIKit'
     spec.ios.framework  = 'AVFoundation'
@@ -27,10 +27,8 @@ Pod::Spec.new do |spec|
     spec.ios.dependency 'BitmovinAnalyticsCollector/Core', '2.9.2'
     spec.ios.dependency 'BitmovinAnalyticsCollector/BitmovinPlayer', '2.9.2'
     spec.ios.dependency 'google-cast-sdk', '~> 4.7.0'
-    spec.ios.dependency 'OMSDK_Turner', '0.0.1'
-    spec.ios.dependency 'FMTSSDK_Mediakind', '1.0.5'
 
-    spec.tvos.vendored_frameworks = 'MKPlayer/tvOS/MKPlayer.framework'
+    spec.tvos.vendored_frameworks = 'MKPlayer/MKPlayer.xcframework'
     spec.tvos.framework  = 'Foundation'
     spec.tvos.framework  = 'UIKit'
     spec.tvos.framework  = 'AVFoundation'
@@ -39,7 +37,6 @@ Pod::Spec.new do |spec|
     spec.tvos.dependency 'BitmovinPlayer', '3.34.1'
     spec.tvos.dependency 'BitmovinAnalyticsCollector/Core', '2.9.2'
     spec.tvos.dependency 'BitmovinAnalyticsCollector/BitmovinPlayer', '2.9.2'
-    spec.tvos.dependency 'FMTSSDK_Mediakind', '1.0.5'
 
     spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=*simulator*]' => 'arm64' }
     spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=*simulator*]' => 'arm64' }
