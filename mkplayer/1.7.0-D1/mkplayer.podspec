@@ -25,7 +25,9 @@ Pod::Spec.new do |spec|
     spec.ios.framework  = 'AVKit'
     spec.ios.framework  = 'WebKit'
     spec.ios.dependency 'Alamofire', '~> 5.2'
-    spec.ios.dependency 'BitmovinPlayer', '3.42.0'
+    spec.ios.dependency 'BitmovinPlayer', '3.41.2'
+    spec.ios.dependency 'BitmovinAnalyticsCollector/Core', '2.9.2'
+    spec.ios.dependency 'BitmovinAnalyticsCollector/BitmovinPlayer', '2.9.2'
 
     spec.tvos.vendored_frameworks = 'MKPlayer/MKPlayer.xcframework'
     spec.tvos.framework  = 'Foundation'
@@ -33,8 +35,12 @@ Pod::Spec.new do |spec|
     spec.tvos.framework  = 'AVFoundation'
     spec.tvos.framework  = 'AVKit'
     spec.tvos.dependency 'Alamofire', '~> 5.2'
-    spec.tvos.dependency 'BitmovinPlayer', '3.42.0'
+    spec.tvos.dependency 'BitmovinPlayer', '3.41.2'
+    spec.tvos.dependency 'BitmovinAnalyticsCollector/Core', '2.9.2'
+    spec.tvos.dependency 'BitmovinAnalyticsCollector/BitmovinPlayer', '2.9.2'
     spec.tvos.exclude_files = ['MKPlayer/**/DownloadManager/**', "MKPlayer/**/MKPOMManager.swift", 'MKPlayer/**/Event/Data/Download/**","MKPlayer/**/Event/*Download*','MKPlayer/**/Config/MKPRemoteControlConfiguration.swift', 'MKPlayer/**/Casting/**']
 
     spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=*simulator*]' => 'arm64' }
+    spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=*simulator*]' => 'arm64' }
+
 end
