@@ -7,11 +7,11 @@ Pod::Spec.new do |spec|
     spec.license      = "Commercial"
     spec.author       = { "MediaKind" => "support@mediakind.com" }
 
-    spec.platform     = :ios, "12.0"
-    spec.platform     = :tvos, "12.0"
+    spec.platform     = :ios, "14.0"
+    spec.platform     = :tvos, "14.0"
 
-    spec.ios.deployment_target = "12.0"
-    spec.tvos.deployment_target = "12.0"
+    spec.ios.deployment_target = "14.0"
+    spec.tvos.deployment_target = "14.0"
 
     spec.source       = { :http => "https://mkplayer.z13.web.core.windows.net/ios_tvos/MKPlayer-0.0.2.zip" }
     spec.swift_version = "5"
@@ -25,9 +25,7 @@ Pod::Spec.new do |spec|
     spec.ios.framework  = 'AVKit'
     spec.ios.framework  = 'WebKit'
     spec.ios.dependency 'Alamofire', '~> 5.2'
-    spec.ios.dependency 'BitmovinPlayer', '3.34.1'
-    spec.ios.dependency 'BitmovinAnalyticsCollector/Core', '2.9.2'
-    spec.ios.dependency 'BitmovinAnalyticsCollector/BitmovinPlayer', '2.9.2'
+    spec.ios.dependency 'BitmovinPlayer', '3.47.0'
 
     spec.tvos.vendored_frameworks = 'MKPlayer/MKPlayer.xcframework'
     spec.tvos.framework  = 'Foundation'
@@ -35,12 +33,8 @@ Pod::Spec.new do |spec|
     spec.tvos.framework  = 'AVFoundation'
     spec.tvos.framework  = 'AVKit'
     spec.tvos.dependency 'Alamofire', '~> 5.2'
-    spec.tvos.dependency 'BitmovinPlayer', '3.34.1'
-    spec.tvos.dependency 'BitmovinAnalyticsCollector/Core', '2.9.2'
-    spec.tvos.dependency 'BitmovinAnalyticsCollector/BitmovinPlayer', '2.9.2'
+    spec.tvos.dependency 'BitmovinPlayer', '3.47.0'
     spec.tvos.exclude_files = ['MKPlayer/**/DownloadManager/**', "MKPlayer/**/MKPOMManager.swift", 'MKPlayer/**/Event/Data/Download/**","MKPlayer/**/Event/*Download*','MKPlayer/**/Config/MKPRemoteControlConfiguration.swift', 'MKPlayer/**/Casting/**']
 
     spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=*simulator*]' => 'arm64' }
-    spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=*simulator*]' => 'arm64' }
-
 end
