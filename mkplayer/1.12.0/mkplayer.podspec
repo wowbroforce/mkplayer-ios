@@ -24,7 +24,7 @@ Pod::Spec.new do |spec|
     spec.ios.framework  = 'AVFoundation'
     spec.ios.framework  = 'AVKit'
     spec.ios.framework  = 'WebKit'
-    spec.ios.dependency 'Alamofire', '~> 5.2'
+    # spec.ios.dependency 'Alamofire', '~> 5.2'
     spec.ios.dependency 'BitmovinPlayer', '3.47.0'
 
     spec.tvos.vendored_frameworks = 'MKPlayer/MKPlayer.xcframework'
@@ -32,7 +32,7 @@ Pod::Spec.new do |spec|
     spec.tvos.framework  = 'UIKit'
     spec.tvos.framework  = 'AVFoundation'
     spec.tvos.framework  = 'AVKit'
-    spec.tvos.dependency 'Alamofire', '~> 5.2'
+    # spec.tvos.dependency 'Alamofire', '~> 5.2'
     spec.tvos.dependency 'BitmovinPlayer', '3.47.0'
     spec.tvos.exclude_files = ['MKPlayer/**/DownloadManager/**', "MKPlayer/**/MKPOMManager.swift", 'MKPlayer/**/Event/Data/Download/**","MKPlayer/**/Event/*Download*','MKPlayer/**/Config/MKPRemoteControlConfiguration.swift', 'MKPlayer/**/Casting/**']
 
